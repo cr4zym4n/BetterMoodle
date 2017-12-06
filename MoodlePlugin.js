@@ -8,7 +8,7 @@
 // @match        http://moodle.dc.ac.tuiasi.ro/
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
 // @require      http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js
-// @require      css           https://raw.githubusercontent.com/cr4zym4n/BetterMoodle/master/assets/styles.css
+// @resource     css      https://rawgit.com/cr4zym4n/BetterMoodle/master/assets/styles.css
 // @run-at       document-body
 // @grant        GM_setValue
 // @grant        GM_getValue
@@ -46,7 +46,7 @@ $("head").append(
     }
     //--- Activate the dialog.
     $("#MainSettings").on("click", function () {
-        var Pop = createDialog('New Dialog Adi', 'STUFF')
+        var Pop = createDialog('New Dialog Adi', 'STUFF');
         //$("#gmOverlayDialog").dialog({
         Pop.dialog({
             modal: false,
